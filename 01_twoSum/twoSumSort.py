@@ -26,10 +26,14 @@ class Solution:
         seen = {}
         for i in range(len(nums)):
             diff = target - nums[i]
+            print('diff', diff)
+            print('seen', str(seen))
             if diff in seen:
+                print('diff in seen diff', diff)
+                print('diff in seen seen', str(seen))
                 return [seen[diff], i]
             seen[nums[i]] = i
         return [0,0]
 
 sol = Solution()
-print(sol.twoSum([3,2,4], 6))
+print(sol.twoSum([3,2,3], 6))
