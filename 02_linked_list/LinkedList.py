@@ -10,9 +10,9 @@ class LinkedList:
             self.head = new_node
 
         current = self.head
-        while (current.next):
+        while (current):
             current = current.next
-        current.next = new_node
+        current = new_node
 
     def __str__(self):
         return f"LinkedList(header={self.head})"
