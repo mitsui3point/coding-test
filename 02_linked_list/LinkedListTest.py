@@ -18,4 +18,9 @@ if __name__ == "__main__":
     print('linkedList.get(2)', linkedList.get(2))
     print('linkedList.get(3)', linkedList.get(3))
     print('linkedList.get(4)', linkedList.get(4))
-
+    linkedList.delete(1)
+    print('=======================================')
+    print('linkedList.get(0)', linkedList.get(0))
+    print('linkedList.get(1)', linkedList.get(1))
+    print('linkedList.get(2)', linkedList.get(2))
+    print('linkedList.get(3)', linkedList.get(3))
