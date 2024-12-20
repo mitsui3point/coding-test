@@ -1,7 +1,7 @@
 from Node import Node  # Node.py에서 Node 클래스를 가져옴
 
 # insert_back(O(1))
-class DoublyLinkedList:
+class HeadAndTailLinkedList:
     def __init__(self, head = None, tail = None):
         self.head = head
         self.tail = tail
