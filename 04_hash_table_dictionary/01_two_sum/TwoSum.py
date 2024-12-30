@@ -4,11 +4,14 @@ class Solution(object):
         for index, value in enumerate(nums):
             if value in d and (target - value) in d:
                 return [d[value], index]
+            
             d[value] = index
+            
             if (target - value) in d and d[value] != d[target - value]:
                 if (d[value] > d[target - value]):
                     return [d[target - value], d[value]]
-                return [d[value], d[target - value]]
+                else:
+                    return [d[value], d[target - value]]
         return [0, 0]
     
 if __name__ == '__main__':
