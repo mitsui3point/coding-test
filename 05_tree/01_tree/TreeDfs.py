@@ -12,6 +12,7 @@ def dfs(root):
 def pre_order(current_root):
     """
     전위순회: 처음 방문
+    root(실행 코드) -> left -> right : inorder
     """
     if current_root is None:
         return
@@ -22,6 +23,7 @@ def pre_order(current_root):
 def in_order(current_root):
     """
     중위순회: 중간에 방문
+    left -> root(실행 코드) -> right : inorder
     """
     if current_root is None:
         return
@@ -32,6 +34,7 @@ def in_order(current_root):
 def post_order(current_root):
     """
     후위순회: 마지막에 방문
+    left -> right -> root(실행 코드) : postorder
     """
     if current_root is None:
         return

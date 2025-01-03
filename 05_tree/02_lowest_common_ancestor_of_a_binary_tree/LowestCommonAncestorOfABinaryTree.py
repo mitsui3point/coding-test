@@ -20,12 +20,11 @@ class Solution(object):
     def LCA(self, root_node = None, p = None, q = None):
         if root_node is None:
             return
+        # left -> right -> root(실행 코드) : postorder
         l = self.LCA(root_node.left, p, q)
         r = self.LCA(root_node.right, p, q)
         print('root_node', root_node.val)
-        if p == root_node:
-            return root_node
-        if q == root_node:
+        if p == root_node or q == root_node:
             return root_node
         if l and r:
             return root_node
